@@ -50,8 +50,8 @@ class BloomFilterTest(unittest.TestCase):
         self.assertTrue(self.bloom_filter.contains(''), 'contains empty is true')
 
     def test_put_and_contains(self):
-        key = 'hello test'
-        not_exists_key = 'hello test gone'
+        key = 'hello tests'
+        not_exists_key = 'hello tests gone'
         self.assertTrue(self.bloom_filter.put(key), 'put must success')
         self.assertTrue(self.bloom_filter.contains(key), 'must contains exists')
         self.assertFalse(self.bloom_filter.contains(not_exists_key),
@@ -59,7 +59,7 @@ class BloomFilterTest(unittest.TestCase):
         self.assertTrue(key in self.bloom_filter, '__contains__ must work')
 
     def test_count(self):
-        key = 'hello test'
+        key = 'hello tests'
         self.assertTrue(self.bloom_filter.put(key))
         self.assertTrue(self.bloom_filter.count() > 0)
 
