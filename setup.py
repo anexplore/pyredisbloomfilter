@@ -4,10 +4,15 @@ try:
 except ImportError:
     from distutils.core import setup
 
+with open('README.md') as f:
+    readme = f.read()
+
 setup(
     name="redis-bloom-filter",
-    version="1.0.0",
+    version="1.0.1",
     description="Bloom filter based on redis",
+    long_description=readme,
+    long_description_content_type="text/markdown",
     author="anexplore",
     maintainer='anexplore',
     packages=["redisbloomfilter"],
@@ -34,6 +39,6 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Environment :: Web Environment',
         'Operating System :: POSIX',
-        'License :: OSI Approved :: Apache License',
+        'License :: OSI Approved :: Apache Software License'
     ]
 )

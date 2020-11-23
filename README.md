@@ -19,7 +19,7 @@ import redis
 import redisbloomfilter
 
 name = "bloomfilter"
-number_of_insertion=10000000
+number_of_insertion = 10000000
 error_rate = 0.00001
 redis_client = redis.StrictRedis()
 
