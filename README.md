@@ -12,6 +12,11 @@ if your redis is in cluster mode, you must import rediscluter from package redis
 
 > note: redis-py-cluster does not support pipeline with transaction
 
+## install
+~~~shell script
+pip install redis-bloom-filter
+~~~
+
 ## how to use
 ~~~python
 import redis
