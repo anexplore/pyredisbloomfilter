@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Python Bloom Filter Based on Redis
-<p>redis cluster not supported</p>
+
 """
 import math
 import threading
